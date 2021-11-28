@@ -19,8 +19,8 @@ public class OperationMonitor extends DfOperationMonitor implements IDfOperation
 
 	@Override
 	public int getYesNoAnswer(IDfOperationError err) throws DfException {
-		System.out.println("Error code:"+err.getErrorCode()+" message:"+ err.getMessage()+" operation is aborting");
-		return DfOperationMonitor.ABORT;
+		System.out.println("Error code:"+err.getErrorCode()+" message:"+ err.getMessage()+" operation is continuing");
+		return DfOperationMonitor.YES;
 	}
 
 	 
